@@ -1,0 +1,80 @@
+{
+    "plan": {
+        "state": [
+            {
+                "Key": "INPUT",
+                "Value": ""
+            }
+        ],
+        "steps": [
+            {
+                "state": [
+                    {
+                        "Key": "INPUT",
+                        "Value": ""
+                    }
+                ],
+                "steps": [],
+                "parameters": [
+                    {
+                        "Key": "topic",
+                        "Value": "using semantic kernel from Microsoft to build AI applications"
+                    },
+                    {
+                        "Key": "tone",
+                        "Value": "clear and concise"
+                    },
+                    {
+                        "Key": "INPUT",
+                        "Value": ""
+                    }
+                ],
+                "outputs": [
+                    "PRESENTATION_SUBMISSION"
+                ],
+                "next_step_index": 0,
+                "name": "SessionGeneratorFunction",
+                "skill_name": "TechSkill",
+                "description": "a function that generates presentations submissions for technical conferences",
+                "executed": false
+            },
+            {
+                "state": [
+                    {
+                        "Key": "INPUT",
+                        "Value": ""
+                    }
+                ],
+                "steps": [],
+                "parameters": [
+                    {
+                        "Key": "INPUT",
+                        "Value": "$PRESENTATION_SUBMISSION"
+                    }
+                ],
+                "outputs": [
+                    "RESULT__FINAL_MAIL"
+                ],
+                "next_step_index": 0,
+                "name": "MailGeneratorFunction",
+                "skill_name": "MailSkill",
+                "description": "a function that generates business mails",
+                "executed": false
+            }
+        ],
+        "parameters": [
+            {
+                "Key": "INPUT",
+                "Value": ""
+            }
+        ],
+        "outputs": [
+            "RESULT__FINAL_MAIL"
+        ],
+        "next_step_index": 0,
+        "name": "",
+        "skill_name": "Microsoft.SemanticKernel.Planning.Plan",
+        "description": "Write a mail to propose a presentation aboout using semantic kernel from Microsoft to build AI applications at a technical conference. The mail should be clear and concise. Use the web to get recent information on the topic.",
+        "executed": false
+    }
+}

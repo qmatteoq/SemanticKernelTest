@@ -1,0 +1,26 @@
+{
+    "name": "GenerateMailForConference",
+    "input": "",
+    "skills": [
+        {
+            "name": "MailSkill",
+            "folder": "SemanticKernelPy\\skills",
+            "isSemantic": true,
+            "functions": [
+                {
+                    "label": "MailGeneratorFunction"
+                }
+            ]
+        },
+        {
+            "name": "TechSkill",
+            "folder": "SemanticKernelPy\\skills",
+            "isSemantic": true,
+            "functions": [
+                {
+                    "label": "SessionGeneratorFunction"
+                }
+            ]
+        }
+    ]
+}

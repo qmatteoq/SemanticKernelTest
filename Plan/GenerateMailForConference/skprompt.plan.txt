@@ -1,0 +1,1 @@
+Write a mail to propose a presentation aboout using semantic kernel from Microsoft to build AI applications at a technical conference. The mail should be clear and concise. Use the web to get recent information on the topic.

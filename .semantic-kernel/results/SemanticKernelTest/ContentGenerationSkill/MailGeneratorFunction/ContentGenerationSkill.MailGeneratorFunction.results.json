@@ -1,0 +1,42 @@
+{
+    "version": "1.0",
+    "skillName": "ContentGenerationSkill",
+    "functionName": "MailGeneratorFunction",
+    "description": "a function that generates business mails",
+    "filePath": "SemanticKernelTest\\ContentGenerationSkill\\MailGeneratorFunction\\skprompt.txt",
+    "results": [
+        {
+            "completionConfig": {
+                "label": "gpt-4",
+                "aiService": "OpenAI",
+                "deploymentOrModelId": "gpt-4",
+                "endpoint": null,
+                "useCustomEndpoint": false,
+                "endpointType": "chat-completion",
+                "chatSystemMessage": "You are an AI assistant that helps people find information."
+            },
+            "requestSettings": {
+                "temperature": 0,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "input",
+                    "value": "I'll work on the Unicorn Project tomorrow at 3 PM"
+                }
+            ],
+            "output": {
+                "prompt": "Rewrite the text between triple backticks into a business mail. Use a professional tone. \r\nIf the mail includes any information about date and time, highlight them in bold using the <strong> tag. \r\nSign the mail as AI Assistant. Generate the output as HTML.\r\n\r\nText: ```I'll work on the Unicorn Project tomorrow at 3 PM```",
+                "durationInMilliseconds": 8608.3704,
+                "inputTokens": 71,
+                "outputTokens": 96,
+                "result": "<p>Dear Sir/Madam,</p>\n\n<p>I am writing to inform you that I will be dedicating my time and efforts towards the Unicorn Project. The work is scheduled to commence <strong>tomorrow at 3 PM</strong>.</p>\n\n<p>I am confident that my involvement will contribute significantly to the progress of the project. I look forward to your support and cooperation in this endeavor.</p>\n\n<p>Best Regards,</p>\n<p>AI Assistant</p>",
+                "chatCompletionResult": "<p>Dear Sir/Madam,</p>\n\n<p>I am writing to inform you that I will be dedicating my time and efforts towards the Unicorn Project. The work is scheduled to commence <strong>tomorrow at 3 PM</strong>.</p>\n\n<p>I am confident that my involvement will contribute significantly to the progress of the project. I look forward to your support and cooperation in this endeavor.</p>\n\n<p>Best Regards,</p>\n<p>AI Assistant</p>"
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "version": "1.0",
+    "skillName": "ContentGenerationSkill",
+    "functionName": "SessionGeneratorFunction",
+    "description": "a function that generates presentations submissions for technical conferences",
+    "filePath": "SemanticKernelTest\\ContentGenerationSkill\\SessionGeneratorFunction\\skprompt.txt",
+    "results": [
+        {
+            "completionConfig": {
+                "label": "gpt-4",
+                "aiService": "OpenAI",
+                "deploymentOrModelId": "gpt-4",
+                "endpoint": null,
+                "useCustomEndpoint": false,
+                "endpointType": "chat-completion",
+                "chatSystemMessage": "You are an AI assistant that helps people find information."
+            },
+            "requestSettings": {
+                "temperature": 0.7,
+                "topP": 0,
+                "presencePenalty": 0,
+                "frequencyPenalty": 0,
+                "maxTokens": 1000,
+                "stopSequences": []
+            },
+            "variables": [
+                {
+                    "key": "tone",
+                    "value": "casual"
+                },
+                {
+                    "key": "topic",
+                    "value": "Semantic Kernel in enterprise apps"
+                }
+            ],
+            "output": {
+                "prompt": "Generate a title and an abstract for submitting a presentation for a technical conference. Generate the output as a HTML list, with the following format:\r\n\r\n- Title (make it bold): {title} \r\n- Abstract (make it bold): {abstract}\r\n\r\nUse the following tone: casual\r\n\r\nThe topic of the presentation is defined in the following text enclosed between triple backticks:\r\n\r\n```Semantic Kernel in enterprise apps```",
+                "durationInMilliseconds": 10577.4891,
+                "inputTokens": 80,
+                "outputTokens": 154,
+                "result": "<ul>\n<li><b>Title:</b> <i>Unraveling the Magic of Semantic Kernel in Enterprise Applications</i></li>\n<li><b>Abstract:</b> <i>Hey there! Ever wondered how enterprise apps understand and process the data they're fed? Well, it's all about the Semantic Kernel, folks! In this presentation, we'll dive into the fascinating world of Semantic Kernels and their role in enterprise applications. We'll explore how they help in interpreting and processing data, making our apps smarter and our lives easier. So, whether you're a seasoned developer or just curious about the tech behind your favorite apps, join us for a fun and enlightening journey into the heart of enterprise software.</i></li>\n</ul>",
+                "chatCompletionResult": "<ul>\n<li><b>Title:</b> <i>Unraveling the Magic of Semantic Kernel in Enterprise Applications</i></li>\n<li><b>Abstract:</b> <i>Hey there! Ever wondered how enterprise apps understand and process the data they're fed? Well, it's all about the Semantic Kernel, folks! In this presentation, we'll dive into the fascinating world of Semantic Kernels and their role in enterprise applications. We'll explore how they help in interpreting and processing data, making our apps smarter and our lives easier. So, whether you're a seasoned developer or just curious about the tech behind your favorite apps, join us for a fun and enlightening journey into the heart of enterprise software.</i></li>\n</ul>"
+            }
+        }
+    ]
+}
